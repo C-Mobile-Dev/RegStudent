@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kgt.kyle.studentregistration.MainActivity">
+    tools:context="com.dev.kgt.regstudent.MainActivity">
 
     <Button
         android:layout_alignParentRight="true"
@@ -21,7 +21,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="50px"
+        android:layout_height="10px"
         android:layout_below="@+id/takePicture"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -47,15 +47,15 @@
         />
 
     <ImageView
-        android:layout_width="250px"
-        android:layout_height="300px"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/spacer2"
         android:id="@+id/imageTaken"
         />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="30px"
+        android:layout_height="10dp"
         android:layout_below="@+id/imageTaken"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

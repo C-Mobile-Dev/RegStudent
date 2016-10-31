@@ -60,10 +60,11 @@
         android:id="@+id/spacer3"
         />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name"
+        android:textSize="20sp"
         android:layout_below="@+id/spacer3"
         android:layout_marginLeft="30px"
         android:id="@+id/nameText"
@@ -78,10 +79,11 @@
         android:id="@+id/spacer4"
         />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Student Number"
+        android:textSize="20sp"
         android:layout_below="@+id/spacer4"
         android:layout_marginLeft="30px"
         android:id="@+id/stdNumText"
@@ -96,10 +98,11 @@
         android:id="@+id/spacer5"
         />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Course"
+        android:textSize="20sp"
         android:layout_below="@+id/spacer5"
         android:layout_marginLeft="30px"
         android:id="@+id/courseText"

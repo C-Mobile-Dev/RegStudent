@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by Kyle on 30/10/2016.
@@ -20,7 +21,6 @@ public class Summary extends AppCompatActivity{
 
     private Bitmap bmp;
     private String name,stdNum,course;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,16 +38,27 @@ public class Summary extends AppCompatActivity{
         ImageView imv = (ImageView)findViewById(R.id.imageView);
         imv.setImageBitmap(bmp);
 
-        EditText edName = (EditText)findViewById(R.id.nameText);
-        edName.setText(name);
+        TextView edName = (TextView)findViewById(R.id.nameText);
+        edName.setText("Name : \t\t\t\t\t" + name);
 
-        EditText edStdNum = (EditText)findViewById(R.id.stdNumText);
-        edStdNum.setText(stdNum);
+        TextView edStdNum = (TextView)findViewById(R.id.stdNumText);
+        edStdNum.setText("Student Number : " + stdNum);
 
-        EditText edCourse = (EditText)findViewById(R.id.courseText);
-        edCourse.setText(course);
+        TextView edCourse = (TextView)findViewById(R.id.courseText);
+        edCourse.setText("Course : \t\t\t\t\t " + course);
 
+        //back button function
+        Button backBtn = (Button)findViewById(R.id.back);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Summary.this,MainActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
+
+
 
 
 

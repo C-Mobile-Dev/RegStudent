@@ -107,6 +107,20 @@
         android:layout_marginLeft="30px"
         android:id="@+id/courseText"
         />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_below="@+id/courseText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/spacer6"
+        />
 
-
+    <CheckBox
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkSave"
+        android:layout_below="@+id/spacer6"
+        android:text="Save Profile settings"
+        />
 </RelativeLayout>

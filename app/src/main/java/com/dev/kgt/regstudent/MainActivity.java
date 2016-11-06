@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //not working correctly (!!! check communication between activities!!! )
     public void restoreProfile(View view){
 
         SharedPreferences settings = getPreferences(0);
